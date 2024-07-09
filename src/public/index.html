@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>API Test Page</h1>
+
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" name="username" required>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="username" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Create Task</h2>
+        <form id="createTaskForm">
+            <label for="taskTitle">Title:</label>
+            <input type="text" id="taskTitle" name="title" required>
+            <label for="taskDescription">Description:</label>
+            <input type="text" id="taskDescription" name="description">
+            <label for="taskCompleted">Completed:</label>
+            <input type="checkbox" id="taskCompleted" name="completed">
+            <button type="submit">Create Task</button>
+        </form>
+
+        <h2>List Tasks</h2>
+        <button id="listTasksButton">List Tasks</button>
+        <div id="tasksList"></div>
+
+        <h2>Update Task</h2>
+        <form id="updateTaskForm">
+            <label for="updateTaskId">Task ID:</label>
+            <input type="text" id="updateTaskId" name="id" required>
+            <label for="updateTaskTitle">Title:</label>
+            <input type="text" id="updateTaskTitle" name="title">
+            <label for="updateTaskDescription">Description:</label>
+            <input type="text" id="updateTaskDescription" name="description">
+            <label for="updateTaskCompleted">Completed:</label>
+            <input type="checkbox" id="updateTaskCompleted" name="completed">
+            <button type="submit">Update Task</button>
+        </form>
+
+        <h2>Delete Task</h2>
+        <form id="deleteTaskForm">
+            <label for="deleteTaskId">Task ID:</label>
+            <input type="text" id="deleteTaskId" name="id" required>
+            <button type="submit">Delete Task</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -53,7 +53,7 @@ class User {
             }
 
             // Insere o novo usuário no banco de dados
-            const token = this.generateToken({ username }); // Gera um token para o usuário
+            const token = this.generateNewToken({ username }); // Gera um token para o usuário
             db.run('INSERT INTO users (username, password, token) VALUES (?, ?, ?)', [username, hashedPassword, token], function (err) {
                 if (err) {
                     return callback(new Error(err.message)); // Retorna um erro se houver um erro na inserção
