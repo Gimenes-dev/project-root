@@ -4,7 +4,7 @@ const authenticateToken = require('../middlewares/authenticateToken'); // Ajuste
 const userController = require('../controllers/userController');
 
 router.post('/register', userController.registerUser); // Endpoint para registrar um novo usuário
-router.post('/login',authenticateToken, userController.loginUser); // Endpoint para login de usuário
-router.get('/register',authenticateToken, userController.getAllUser);
+router.post('/login', userController.loginUser); // Endpoint para login de usuário
+router.get('/register', userController.getAllUser);
 
 module.exports = router;
